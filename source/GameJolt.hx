@@ -21,7 +21,7 @@ import openfl.text.TextFormat;
 import tentools.api.FlxGameJolt as GJApi;
 
 using StringTools;
-class GameJoltAPI extends MusicBeatState
+class GameJoltAPI
 {
 	static var userLogin:Bool = false;
 	public static var totalTrophies:Float = GJApi.TROPHIES_ACHIEVED + GJApi.TROPHIES_MISSING;
