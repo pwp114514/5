@@ -245,7 +245,7 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new ModsMenuState());
 									#end
 									case 'gamejolt':
-										GameJolt(new GameJolt());
+										GameJolt.switchState(new GameJoltAPI());
 									case 'awards':
 										MusicBeatState.switchState(new AchievementsMenuState());
 									case 'credits':
