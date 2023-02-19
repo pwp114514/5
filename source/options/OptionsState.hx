@@ -63,6 +63,11 @@ class OptionsState extends MusicBeatState
 				openSubState(new options.GameplaySettingsSubState());
 			case 'Adjust Delay and Combo':
 				LoadingState.loadAndSwitchState(new options.NoteOffsetState());
+			case GameJolt':
+				#if android
+				removeVirtualPad();
+				#end
+				openSubState(new options.GameJolt());
 		}
 	}
 
